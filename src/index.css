@@ -1,5 +1,14 @@
 @import "tailwindcss";
 
+/* Self-hosted Inter (was Google Fonts — see index.html history / mkdocs-docs/docker.md):
+   the app ships as fully static assets with no runtime call to fonts.googleapis.com,
+   matching the "no server, no upload" claim in README even when self-hosted via Docker.
+   Weights match the --font-sans usage below: 400/500/600/700 only. */
+@import "@fontsource/inter/400.css";
+@import "@fontsource/inter/500.css";
+@import "@fontsource/inter/600.css";
+@import "@fontsource/inter/700.css";
+
 @theme {
   /* Custom colour palette — mirrors the v3 tailwind.config.js orca extension */
   --color-orca-50:  #f0f7ff;
